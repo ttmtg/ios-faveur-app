@@ -1,2 +1,11 @@
 # Pods フォルダは要らない
 Pods/
+
+# .DS_Store ファイルは要らない
+*.DS_Store
+
+# Podfile ファイルは要らない
+*Podfile
+
+# Podfile.lock ファイルは要らない
+*Podfile.lock

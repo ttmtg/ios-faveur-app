@@ -1,13 +1,12 @@
 //
 //  AppDelegate.swift
-//  Faveur
+//  faveur-ios
 //
-//  Created by 高橋知嗣 on 2017/12/13.
-//  Copyright © 2017年 ttmtg. All rights reserved.
+//  Created by 高橋知嗣 on 2018/01/02.
+//  Copyright © 2018年 ttmtg. All rights reserved.
 //
 
 import UIKit
-import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        FirebaseApp.configure()
+        // Override point for customization after application launch.
         return true
     }
 

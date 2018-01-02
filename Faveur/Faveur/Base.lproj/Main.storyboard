@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Cdt-En-nMz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -11,133 +11,161 @@
     </dependencies>
     <scenes>
         <!--ホーム-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Faveur" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="UsL-OX-54b">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FFS-wp-FPb">
-                                <rect key="frame" x="30" y="479" width="315" height="88"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ov1-sy-PYf">
-                                        <rect key="frame" x="30" y="0.0" width="88" height="88"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="88" id="cfT-eK-XX7"/>
-                                            <constraint firstAttribute="width" constant="88" id="les-rf-gJe"/>
-                                        </constraints>
-                                        <state key="normal" title="Button" image="map"/>
-                                        <connections>
-                                            <segue destination="i5B-6P-J5N" kind="show" id="777-Uc-BnH"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wZB-aM-kVA">
-                                        <rect key="frame" x="197" y="0.0" width="88" height="88"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="88" id="RhD-op-VAi"/>
-                                            <constraint firstAttribute="width" constant="88" id="gsJ-ZV-VnT"/>
-                                        </constraints>
-                                        <state key="normal" title="Button" image="call"/>
-                                        <connections>
-                                            <action selector="callbutton" destination="BYZ-38-t0r" eventType="touchUpInside" id="CRy-Ir-HjE"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstItem="Ov1-sy-PYf" firstAttribute="centerY" secondItem="FFS-wp-FPb" secondAttribute="centerY" id="6Td-1K-CyU"/>
-                                    <constraint firstItem="Ov1-sy-PYf" firstAttribute="leading" secondItem="FFS-wp-FPb" secondAttribute="leading" constant="30" id="S9A-Q1-eWG"/>
-                                    <constraint firstAttribute="trailing" secondItem="wZB-aM-kVA" secondAttribute="trailing" constant="30" id="TWG-cq-qfd"/>
-                                    <constraint firstItem="wZB-aM-kVA" firstAttribute="centerY" secondItem="FFS-wp-FPb" secondAttribute="centerY" id="USQ-0R-AGG"/>
-                                    <constraint firstItem="Ov1-sy-PYf" firstAttribute="top" secondItem="FFS-wp-FPb" secondAttribute="top" id="lXa-kh-v6C"/>
-                                </constraints>
-                            </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_square" translatesAutoresizingMaskIntoConstraints="NO" id="IB0-w4-o83">
-                                <rect key="frame" x="67" y="104" width="240" height="240"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="240" id="crz-Zy-ZmP"/>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="240" id="g1P-rI-V2u"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="営業時間：9:30〜17:30   /   定休日：日曜 月曜" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gmT-JR-LQR">
-                                <rect key="frame" x="10" y="631" width="355" height="16"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <color key="textColor" red="0.023529411764705882" green="0.16470588235294117" blue="0.44705882352941173" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="DUL-EM-95O" firstAttribute="bottom" secondItem="gmT-JR-LQR" secondAttribute="bottom" constant="20" id="3J8-VW-2T3"/>
-                            <constraint firstItem="IB0-w4-o83" firstAttribute="top" secondItem="DUL-EM-95O" secondAttribute="top" constant="40" id="LE6-Jr-MRa"/>
-                            <constraint firstItem="DUL-EM-95O" firstAttribute="trailing" secondItem="gmT-JR-LQR" secondAttribute="trailing" constant="10" id="Pfi-yV-0rZ"/>
-                            <constraint firstItem="gmT-JR-LQR" firstAttribute="leading" secondItem="DUL-EM-95O" secondAttribute="leading" constant="10" id="QIa-Qz-w2j"/>
-                            <constraint firstItem="IB0-w4-o83" firstAttribute="centerX" secondItem="FFS-wp-FPb" secondAttribute="centerX" id="YYB-LY-hed"/>
-                            <constraint firstItem="DUL-EM-95O" firstAttribute="bottom" secondItem="FFS-wp-FPb" secondAttribute="bottom" constant="100" id="bKh-SR-2Ma"/>
-                            <constraint firstItem="FFS-wp-FPb" firstAttribute="leading" secondItem="DUL-EM-95O" secondAttribute="leading" constant="30" id="ldg-WK-x8B"/>
-                            <constraint firstAttribute="trailing" secondItem="FFS-wp-FPb" secondAttribute="trailing" constant="30" id="zKW-3b-nd1"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="DUL-EM-95O"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="ホーム" largeTitleDisplayMode="never" id="i3r-pg-qEq"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="456.80000000000001" y="118.29085457271366"/>
-        </scene>
-        <!--Map View Contoroller-->
-        <scene sceneID="fuP-5N-xT6">
-            <objects>
-                <viewController id="i5B-6P-J5N" customClass="MapViewContoroller" customModule="Faveur" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="hRC-v0-Dzn">
+                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="faveur_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KyI-1V-eN4">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="bI5-jc-Ros">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6vt-hY-w2a">
+                                <rect key="frame" x="127" y="233.5" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="Qst-ia-5E4"/>
+                                    <constraint firstAttribute="width" constant="120" id="s9W-2S-ZxN"/>
+                                </constraints>
+                                <state key="normal" image="call_02"/>
+                                <connections>
+                                    <action selector="callbutton:" destination="9pv-A4-QxB" eventType="touchUpInside" id="BEF-Iz-TyJ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="電話で予約する" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DbH-Dw-uYy">
+                                <rect key="frame" x="0.0" y="353.5" width="375" height="13.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="DbH-Dw-uYy" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="23z-kn-kWE"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="DbH-Dw-uYy" secondAttribute="trailing" id="2Ka-4R-TPy"/>
+                            <constraint firstItem="DbH-Dw-uYy" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="3kp-TS-Vpr"/>
+                            <constraint firstItem="DbH-Dw-uYy" firstAttribute="top" secondItem="6vt-hY-w2a" secondAttribute="bottom" id="8J8-i2-9pV"/>
+                            <constraint firstItem="6vt-hY-w2a" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" constant="-40" id="991-b2-fjG"/>
+                            <constraint firstItem="bI5-jc-Ros" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="AFJ-Gh-cnL"/>
+                            <constraint firstItem="bI5-jc-Ros" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="CDo-OY-opP"/>
+                            <constraint firstAttribute="trailing" secondItem="bI5-jc-Ros" secondAttribute="trailing" id="WUg-za-c3t"/>
+                            <constraint firstItem="6vt-hY-w2a" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="i1m-72-9j6"/>
+                            <constraint firstAttribute="bottom" secondItem="bI5-jc-Ros" secondAttribute="bottom" id="okl-dZ-0u3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="ホーム" image="first" id="acW-dT-cKf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="749.60000000000002" y="-1103.2983508245877"/>
+        </scene>
+        <!--カタログ-->
+        <scene sceneID="0K0-rX-FV9">
+            <objects>
+                <viewController id="cW8-z2-49w" customClass="CatalogViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hHc-lB-tEb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Oea-5F-OLY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="カタログ" image="first" id="EQU-Df-BYp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4bc-c3-pKv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="405"/>
+        </scene>
+        <!--お知らせ-->
+        <scene sceneID="xY3-6P-mXM">
+            <objects>
+                <viewController id="s6g-uX-a0q" customClass="NewsViewController" customModule="faveur_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rie-ME-lNL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IvB-uV-3eh">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </webView>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="KyI-1V-eN4" secondAttribute="trailing" id="0td-vQ-aEP"/>
-                            <constraint firstItem="KyI-1V-eN4" firstAttribute="leading" secondItem="hRC-v0-Dzn" secondAttribute="leading" id="Lb2-qk-mWh"/>
-                            <constraint firstItem="KyI-1V-eN4" firstAttribute="top" secondItem="hRC-v0-Dzn" secondAttribute="top" id="Xrb-I0-OYZ"/>
-                            <constraint firstItem="KyI-1V-eN4" firstAttribute="bottom" secondItem="hRC-v0-Dzn" secondAttribute="bottom" id="gxJ-2b-bgC"/>
+                            <constraint firstAttribute="bottom" secondItem="IvB-uV-3eh" secondAttribute="bottom" id="2go-0K-ZqE"/>
+                            <constraint firstItem="IvB-uV-3eh" firstAttribute="trailing" secondItem="MO3-BA-JMO" secondAttribute="trailing" id="8nw-SA-4Ks"/>
+                            <constraint firstItem="IvB-uV-3eh" firstAttribute="top" secondItem="Rie-ME-lNL" secondAttribute="top" id="GQu-jk-mrM"/>
+                            <constraint firstItem="IvB-uV-3eh" firstAttribute="leading" secondItem="MO3-BA-JMO" secondAttribute="leading" id="jxQ-Me-401"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="op2-id-NFb"/>
+                        <viewLayoutGuide key="safeArea" id="MO3-BA-JMO"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="お知らせ" image="second" id="Y5o-Uy-q1t"/>
                     <connections>
-                        <outlet property="webView" destination="KyI-1V-eN4" id="Kfc-IF-TYv"/>
+                        <outlet property="webview" destination="IvB-uV-3eh" id="AKf-DM-bDW"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UAn-tU-KEG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eQm-7U-NSA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1220" y="114.69265367316342"/>
+            <point key="canvasLocation" x="749.60000000000002" y="1202.2488755622189"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="62L-EY-dmY">
+        <!--マップ-->
+        <scene sceneID="wg7-f3-ORb">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Cdt-En-nMz" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dAr-4G-Hog">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
+                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="faveur_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZIl-50-rp6">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="マップ" image="second" id="cPa-gy-q4n"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="DAL-qZ-pfR"/>
+                        <outlet property="webview" destination="ZIl-50-rp6" id="6pW-VT-J1c"/>
                     </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LBr-Dz-q7z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-388" y="118"/>
+            <point key="canvasLocation" x="749.60000000000002" y="-334.18290854572717"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="cW8-z2-49w" kind="relationship" relationship="viewControllers" id="O6U-zz-X62"/>
+                        <segue destination="s6g-uX-a0q" kind="relationship" relationship="viewControllers" id="4RV-XZ-9NL"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
     </scenes>
     <resources>
-        <image name="call" width="88" height="88"/>
-        <image name="logo_square" width="320" height="400"/>
-        <image name="map" width="88" height="88"/>
+        <image name="bg" width="1444" height="1444"/>
+        <image name="call_02" width="88" height="88"/>
+        <image name="first" width="30" height="30"/>
+        <image name="second" width="30" height="30"/>
     </resources>
 </document>

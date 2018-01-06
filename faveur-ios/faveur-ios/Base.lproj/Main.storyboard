@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6vt-hY-w2a">
-                                <rect key="frame" x="127" y="233.5" width="120" height="120"/>
+                                <rect key="frame" x="127.5" y="233.5" width="120" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="Qst-ia-5E4"/>
                                     <constraint firstAttribute="width" constant="120" id="s9W-2S-ZxN"/>
@@ -171,10 +171,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EoN-nE-FFK">
-                                <rect key="frame" x="32" y="140" width="311" height="200"/>
+                                <rect key="frame" x="16" y="100" width="343" height="200"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tpi-mA-u80">
-                                        <rect key="frame" x="16" y="16" width="279" height="168"/>
+                                        <rect key="frame" x="16" y="16" width="311" height="168"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <attributedString key="attributedText">
                                             <fragment content="メモを入れてね">
@@ -200,16 +200,50 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5NU-rK-mBr">
+                                <rect key="frame" x="279" y="40" width="80" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.53189174107142856" blue="0.21640624999999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Mc6-0J-uiX"/>
+                                    <constraint firstAttribute="width" constant="80" id="zfc-nb-CJY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="保 存">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="saveButton:" destination="iPy-hD-qV0" eventType="touchUpInside" id="bfK-uB-P4s"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_shiopan" translatesAutoresizingMaskIntoConstraints="NO" id="vS2-AV-VAG">
+                                <rect key="frame" x="-462.5" y="358" width="1500" height="260"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="260" id="icW-It-l6i"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.98431372549019602" green="0.96078431372549022" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="EoN-nE-FFK" firstAttribute="leading" secondItem="6xh-QC-mY6" secondAttribute="leading" constant="32" id="T4G-aj-hXP"/>
-                            <constraint firstItem="6xh-QC-mY6" firstAttribute="bottom" secondItem="EoN-nE-FFK" secondAttribute="bottom" constant="278" id="aPF-h3-jrK"/>
-                            <constraint firstItem="6xh-QC-mY6" firstAttribute="trailing" secondItem="EoN-nE-FFK" secondAttribute="trailing" constant="32" id="wz7-Ht-vvG"/>
+                            <constraint firstItem="vS2-AV-VAG" firstAttribute="top" relation="greaterThanOrEqual" secondItem="EoN-nE-FFK" secondAttribute="bottom" constant="20" id="8i6-rR-nhs"/>
+                            <constraint firstItem="vS2-AV-VAG" firstAttribute="centerX" secondItem="hgo-x0-gzk" secondAttribute="centerX" constant="100" id="Dlb-14-YQf"/>
+                            <constraint firstItem="EoN-nE-FFK" firstAttribute="leading" secondItem="6xh-QC-mY6" secondAttribute="leading" constant="16" id="T4G-aj-hXP"/>
+                            <constraint firstItem="6xh-QC-mY6" firstAttribute="trailing" secondItem="5NU-rK-mBr" secondAttribute="trailing" constant="16" id="lSJ-VT-Oqk"/>
+                            <constraint firstItem="5NU-rK-mBr" firstAttribute="top" secondItem="6xh-QC-mY6" secondAttribute="top" constant="20" id="qZG-bV-zuD"/>
+                            <constraint firstItem="EoN-nE-FFK" firstAttribute="top" secondItem="5NU-rK-mBr" secondAttribute="bottom" constant="20" id="wk7-R6-M5T"/>
+                            <constraint firstItem="6xh-QC-mY6" firstAttribute="trailing" secondItem="EoN-nE-FFK" secondAttribute="trailing" constant="16" id="wz7-Ht-vvG"/>
+                            <constraint firstItem="6xh-QC-mY6" firstAttribute="bottom" secondItem="vS2-AV-VAG" secondAttribute="bottom" id="zm3-YB-PKg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6xh-QC-mY6"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="メモ" image="first" id="fXP-dz-YgL"/>
+                    <connections>
+                        <outlet property="memo" destination="Tpi-mA-u80" id="Hsa-ct-fiJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b3G-du-kJK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -220,6 +254,7 @@
         <image name="bg" width="1444" height="1444"/>
         <image name="call_02" width="88" height="88"/>
         <image name="first" width="30" height="30"/>
+        <image name="img_shiopan" width="1500" height="1000"/>
         <image name="second" width="30" height="30"/>
     </resources>
 </document>

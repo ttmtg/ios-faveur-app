@@ -58,7 +58,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="749.60000000000002" y="-1103.2983508245877"/>
+            <point key="canvasLocation" x="745" y="-1558"/>
         </scene>
         <!--カタログ-->
         <scene sceneID="0K0-rX-FV9">
@@ -74,7 +74,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4bc-c3-pKv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="405"/>
+            <point key="canvasLocation" x="745" y="782"/>
         </scene>
         <!--お知らせ-->
         <scene sceneID="xY3-6P-mXM">
@@ -109,7 +109,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eQm-7U-NSA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="749.60000000000002" y="1202.2488755622189"/>
+            <point key="canvasLocation" x="745" y="1529"/>
         </scene>
         <!--マップ-->
         <scene sceneID="wg7-f3-ORb">
@@ -139,7 +139,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="749.60000000000002" y="-334.18290854572717"/>
+            <point key="canvasLocation" x="745" y="-783"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -153,6 +153,7 @@
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="iPy-hD-qV0" kind="relationship" relationship="viewControllers" id="Qpn-mN-odW"/>
                         <segue destination="cW8-z2-49w" kind="relationship" relationship="viewControllers" id="O6U-zz-X62"/>
                         <segue destination="s6g-uX-a0q" kind="relationship" relationship="viewControllers" id="4RV-XZ-9NL"/>
                     </connections>
@@ -160,6 +161,59 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+        <!--メモ-->
+        <scene sceneID="p0c-fP-F1X">
+            <objects>
+                <viewController id="iPy-hD-qV0" customClass="MemoViewController" customModule="faveur_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hgo-x0-gzk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EoN-nE-FFK">
+                                <rect key="frame" x="32" y="140" width="311" height="200"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tpi-mA-u80">
+                                        <rect key="frame" x="16" y="16" width="279" height="168"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="メモを入れてね">
+                                                <attributes>
+                                                    <font key="NSFont" size="17" name=".HiraKakuInterface-W3"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Tpi-mA-u80" firstAttribute="top" secondItem="EoN-nE-FFK" secondAttribute="top" constant="16" id="E2q-mc-Eyv"/>
+                                    <constraint firstAttribute="trailing" secondItem="Tpi-mA-u80" secondAttribute="trailing" constant="16" id="SCM-qG-Aau"/>
+                                    <constraint firstAttribute="bottom" secondItem="Tpi-mA-u80" secondAttribute="bottom" constant="16" id="ndy-2d-M6j"/>
+                                    <constraint firstItem="Tpi-mA-u80" firstAttribute="leading" secondItem="EoN-nE-FFK" secondAttribute="leading" constant="16" id="txi-ys-nJd"/>
+                                    <constraint firstAttribute="height" constant="200" id="vju-yX-VJk"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98431372549019602" green="0.96078431372549022" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="EoN-nE-FFK" firstAttribute="leading" secondItem="6xh-QC-mY6" secondAttribute="leading" constant="32" id="T4G-aj-hXP"/>
+                            <constraint firstItem="6xh-QC-mY6" firstAttribute="bottom" secondItem="EoN-nE-FFK" secondAttribute="bottom" constant="278" id="aPF-h3-jrK"/>
+                            <constraint firstItem="6xh-QC-mY6" firstAttribute="trailing" secondItem="EoN-nE-FFK" secondAttribute="trailing" constant="32" id="wz7-Ht-vvG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6xh-QC-mY6"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="メモ" image="first" id="fXP-dz-YgL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b3G-du-kJK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="744.79999999999995" y="-0.44977511244377816"/>
         </scene>
     </scenes>
     <resources>

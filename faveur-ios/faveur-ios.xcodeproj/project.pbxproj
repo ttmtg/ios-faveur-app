@@ -13,7 +13,6 @@
 		A8F26F791FFAA02A0098D05A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8F26F771FFAA02A0098D05A /* Main.storyboard */; };
 		A8F26F7B1FFAA02A0098D05A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8F26F7A1FFAA02A0098D05A /* Assets.xcassets */; };
 		A8F26F7E1FFAA02A0098D05A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8F26F7C1FFAA02A0098D05A /* LaunchScreen.storyboard */; };
-		A8F26F8A1FFB89430098D05A /* CatalogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F26F891FFB89430098D05A /* CatalogViewController.swift */; };
 		A8F26F8C1FFB963A0098D05A /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F26F8B1FFB963A0098D05A /* NewsViewController.swift */; };
 		A8F26F8F1FFB98D30098D05A /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8F26F8E1FFB98D30098D05A /* WebKit.framework */; };
 		A8F26F911FFBB4BE0098D05A /* LoadingProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F26F901FFBB4BE0098D05A /* LoadingProxy.swift */; };
@@ -29,7 +28,6 @@
 		A8F26F7A1FFAA02A0098D05A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8F26F7D1FFAA02A0098D05A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A8F26F7F1FFAA02A0098D05A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A8F26F891FFB89430098D05A /* CatalogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogViewController.swift; sourceTree = "<group>"; };
 		A8F26F8B1FFB963A0098D05A /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		A8F26F8E1FFB98D30098D05A /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		A8F26F901FFBB4BE0098D05A /* LoadingProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingProxy.swift; sourceTree = "<group>"; };
@@ -74,7 +72,6 @@
 				A8F26FA12000DDB90098D05A /* MemoViewController.swift */,
 				A8F26F731FFAA02A0098D05A /* FirstViewController.swift */,
 				A8F26F751FFAA02A0098D05A /* SecondViewController.swift */,
-				A8F26F891FFB89430098D05A /* CatalogViewController.swift */,
 				A8F26F8B1FFB963A0098D05A /* NewsViewController.swift */,
 				A8F26F901FFBB4BE0098D05A /* LoadingProxy.swift */,
 				A8F26F7A1FFAA02A0098D05A /* Assets.xcassets */,
@@ -164,7 +161,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8F26F761FFAA02A0098D05A /* SecondViewController.swift in Sources */,
-				A8F26F8A1FFB89430098D05A /* CatalogViewController.swift in Sources */,
 				A8F26F721FFAA02A0098D05A /* AppDelegate.swift in Sources */,
 				A8F26F911FFBB4BE0098D05A /* LoadingProxy.swift in Sources */,
 				A8F26FA22000DDB90098D05A /* MemoViewController.swift in Sources */,

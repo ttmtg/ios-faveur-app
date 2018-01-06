@@ -74,7 +74,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4bc-c3-pKv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="405"/>
+            <point key="canvasLocation" x="750" y="1150"/>
         </scene>
         <!--お知らせ-->
         <scene sceneID="xY3-6P-mXM">
@@ -109,7 +109,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eQm-7U-NSA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="749.60000000000002" y="1202.2488755622189"/>
+            <point key="canvasLocation" x="750" y="1916"/>
         </scene>
         <!--マップ-->
         <scene sceneID="wg7-f3-ORb">
@@ -139,7 +139,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="749.60000000000002" y="-334.18290854572717"/>
+            <point key="canvasLocation" x="750" y="340"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -152,6 +152,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="xCs-Wj-vWt" kind="relationship" relationship="viewControllers" id="GuP-P7-mnM"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="cW8-z2-49w" kind="relationship" relationship="viewControllers" id="O6U-zz-X62"/>
                         <segue destination="s6g-uX-a0q" kind="relationship" relationship="viewControllers" id="4RV-XZ-9NL"/>
@@ -160,6 +161,59 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+        <!--メモ-->
+        <scene sceneID="eBa-Sv-cEd">
+            <objects>
+                <viewController id="xCs-Wj-vWt" customClass="MemoViewController" customModule="faveur_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TjL-ha-fAa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="lVY-1x-Igh">
+                                <rect key="frame" x="32" y="100" width="311" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="8Te-j8-4xO"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="btc-n0-Acc">
+                                <rect key="frame" x="312" y="30" width="31" height="30"/>
+                                <state key="normal" title="保存"/>
+                                <connections>
+                                    <action selector="pressSaveButton:" destination="xCs-Wj-vWt" eventType="touchUpInside" id="vLT-jN-Dfj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RaL-Fa-SRx">
+                                <rect key="frame" x="32" y="30" width="31" height="30"/>
+                                <state key="normal" title="削除"/>
+                                <connections>
+                                    <action selector="pressDeleteButton:" destination="xCs-Wj-vWt" eventType="touchUpInside" id="zc8-aB-qGI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xvr-D1-H9K" firstAttribute="trailing" secondItem="btc-n0-Acc" secondAttribute="trailing" constant="32" id="BQp-s8-WzP"/>
+                            <constraint firstItem="lVY-1x-Igh" firstAttribute="leading" secondItem="xvr-D1-H9K" secondAttribute="leading" constant="32" id="Bbb-d7-qJf"/>
+                            <constraint firstItem="xvr-D1-H9K" firstAttribute="trailing" secondItem="lVY-1x-Igh" secondAttribute="trailing" constant="32" id="GLH-xY-3gC"/>
+                            <constraint firstItem="RaL-Fa-SRx" firstAttribute="leading" secondItem="xvr-D1-H9K" secondAttribute="leading" constant="32" id="IEe-U5-QCW"/>
+                            <constraint firstItem="lVY-1x-Igh" firstAttribute="top" secondItem="TjL-ha-fAa" secondAttribute="top" constant="100" id="LMA-HA-tbm"/>
+                            <constraint firstItem="btc-n0-Acc" firstAttribute="top" secondItem="xvr-D1-H9K" secondAttribute="top" constant="10" id="MYX-dt-ho9"/>
+                            <constraint firstItem="RaL-Fa-SRx" firstAttribute="top" secondItem="xvr-D1-H9K" secondAttribute="top" constant="10" id="YLB-Ue-td2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xvr-D1-H9K"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="メモ" image="first" id="jlO-A0-LzO"/>
+                    <connections>
+                        <outlet property="txtCoredata" destination="lVY-1x-Igh" id="GpL-jG-x2t"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QNo-SG-b1g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="749.60000000000002" y="-381.85907046476763"/>
         </scene>
     </scenes>
     <resources>

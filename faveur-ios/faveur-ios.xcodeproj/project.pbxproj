@@ -17,6 +17,10 @@
 		A8F26F8C1FFB963A0098D05A /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F26F8B1FFB963A0098D05A /* NewsViewController.swift */; };
 		A8F26F8F1FFB98D30098D05A /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8F26F8E1FFB98D30098D05A /* WebKit.framework */; };
 		A8F26F911FFBB4BE0098D05A /* LoadingProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F26F901FFBB4BE0098D05A /* LoadingProxy.swift */; };
+		A8F26F931FFBC92E0098D05A /* MemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F26F921FFBC92E0098D05A /* MemoViewController.swift */; };
+		A8F26F961FFBCCE70098D05A /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A8F26F941FFBCCE70098D05A /* CoreData.xcdatamodeld */; };
+		A8F26F991FFBCE2B0098D05A /* Memo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F26F971FFBCE2B0098D05A /* Memo+CoreDataClass.swift */; };
+		A8F26F9A1FFBCE2B0098D05A /* Memo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F26F981FFBCE2B0098D05A /* Memo+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,10 @@
 		A8F26F8B1FFB963A0098D05A /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		A8F26F8E1FFB98D30098D05A /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		A8F26F901FFBB4BE0098D05A /* LoadingProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingProxy.swift; sourceTree = "<group>"; };
+		A8F26F921FFBC92E0098D05A /* MemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoViewController.swift; sourceTree = "<group>"; };
+		A8F26F951FFBCCE70098D05A /* CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
+		A8F26F971FFBCE2B0098D05A /* Memo+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Memo+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A8F26F981FFBCE2B0098D05A /* Memo+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Memo+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				A8F26F701FFAA02A0098D05A /* faveur-ios */,
+				A8F26F941FFBCCE70098D05A /* CoreData.xcdatamodeld */,
 				A8F26F6F1FFAA02A0098D05A /* Products */,
 				A8F26F8D1FFB98D20098D05A /* Frameworks */,
 			);
@@ -66,6 +75,8 @@
 		A8F26F701FFAA02A0098D05A /* faveur-ios */ = {
 			isa = PBXGroup;
 			children = (
+				A8F26F971FFBCE2B0098D05A /* Memo+CoreDataClass.swift */,
+				A8F26F981FFBCE2B0098D05A /* Memo+CoreDataProperties.swift */,
 				A8F26F711FFAA02A0098D05A /* AppDelegate.swift */,
 				A8F26F7C1FFAA02A0098D05A /* LaunchScreen.storyboard */,
 				A8F26F731FFAA02A0098D05A /* FirstViewController.swift */,
@@ -73,6 +84,7 @@
 				A8F26F891FFB89430098D05A /* CatalogViewController.swift */,
 				A8F26F8B1FFB963A0098D05A /* NewsViewController.swift */,
 				A8F26F771FFAA02A0098D05A /* Main.storyboard */,
+				A8F26F921FFBC92E0098D05A /* MemoViewController.swift */,
 				A8F26F901FFBB4BE0098D05A /* LoadingProxy.swift */,
 				A8F26F7A1FFAA02A0098D05A /* Assets.xcassets */,
 				A8F26F7F1FFAA02A0098D05A /* Info.plist */,
@@ -160,10 +172,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8F26F961FFBCCE70098D05A /* CoreData.xcdatamodeld in Sources */,
 				A8F26F761FFAA02A0098D05A /* SecondViewController.swift in Sources */,
 				A8F26F8A1FFB89430098D05A /* CatalogViewController.swift in Sources */,
+				A8F26F9A1FFBCE2B0098D05A /* Memo+CoreDataProperties.swift in Sources */,
+				A8F26F991FFBCE2B0098D05A /* Memo+CoreDataClass.swift in Sources */,
 				A8F26F721FFAA02A0098D05A /* AppDelegate.swift in Sources */,
 				A8F26F911FFBB4BE0098D05A /* LoadingProxy.swift in Sources */,
+				A8F26F931FFBC92E0098D05A /* MemoViewController.swift in Sources */,
 				A8F26F8C1FFB963A0098D05A /* NewsViewController.swift in Sources */,
 				A8F26F741FFAA02A0098D05A /* FirstViewController.swift in Sources */,
 			);
@@ -350,6 +366,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A8F26F941FFBCCE70098D05A /* CoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A8F26F951FFBCCE70098D05A /* CoreData.xcdatamodel */,
+			);
+			currentVersion = A8F26F951FFBCCE70098D05A /* CoreData.xcdatamodel */;
+			path = CoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A8F26F661FFAA02A0098D05A /* Project object */;
 }

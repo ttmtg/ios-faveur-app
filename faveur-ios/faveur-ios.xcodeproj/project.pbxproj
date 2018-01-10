@@ -17,6 +17,7 @@
 		A8F26F8F1FFB98D30098D05A /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8F26F8E1FFB98D30098D05A /* WebKit.framework */; };
 		A8F26F911FFBB4BE0098D05A /* LoadingProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F26F901FFBB4BE0098D05A /* LoadingProxy.swift */; };
 		A8F26FA22000DDB90098D05A /* MemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F26FA12000DDB90098D05A /* MemoViewController.swift */; };
+		A8F26FA82006440A0098D05A /* CatalogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F26FA72006440A0098D05A /* CatalogViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		A8F26F8E1FFB98D30098D05A /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		A8F26F901FFBB4BE0098D05A /* LoadingProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingProxy.swift; sourceTree = "<group>"; };
 		A8F26FA12000DDB90098D05A /* MemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoViewController.swift; sourceTree = "<group>"; };
+		A8F26FA72006440A0098D05A /* CatalogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				A8F26F7C1FFAA02A0098D05A /* LaunchScreen.storyboard */,
 				A8F26F771FFAA02A0098D05A /* Main.storyboard */,
 				A8F26FA12000DDB90098D05A /* MemoViewController.swift */,
+				A8F26FA72006440A0098D05A /* CatalogViewController.swift */,
 				A8F26F731FFAA02A0098D05A /* FirstViewController.swift */,
 				A8F26F751FFAA02A0098D05A /* SecondViewController.swift */,
 				A8F26F8B1FFB963A0098D05A /* NewsViewController.swift */,
@@ -160,6 +163,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8F26FA82006440A0098D05A /* CatalogViewController.swift in Sources */,
 				A8F26F761FFAA02A0098D05A /* SecondViewController.swift in Sources */,
 				A8F26F721FFAA02A0098D05A /* AppDelegate.swift in Sources */,
 				A8F26F911FFBB4BE0098D05A /* LoadingProxy.swift in Sources */,

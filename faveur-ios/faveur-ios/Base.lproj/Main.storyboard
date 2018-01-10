@@ -58,7 +58,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="745" y="-1558"/>
+            <point key="canvasLocation" x="1823" y="-737"/>
+        </scene>
+        <!--パン-->
+        <scene sceneID="WVX-ev-adB">
+            <objects>
+                <viewController id="7Ma-6q-OdI" customClass="CatalogViewController" customModule="faveur_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oZ3-ZK-7Vi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="DSW-VG-gMx"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="パン" image="tab_call" id="gGS-Hs-kw2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ms6-UL-8JC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="844" y="0.0"/>
         </scene>
         <!--お知らせ-->
         <scene sceneID="xY3-6P-mXM">
@@ -93,7 +109,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eQm-7U-NSA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="745" y="1529"/>
+            <point key="canvasLocation" x="2582" y="102"/>
         </scene>
         <!--マップ-->
         <scene sceneID="wg7-f3-ORb">
@@ -128,7 +144,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="745" y="-783"/>
+            <point key="canvasLocation" x="2582" y="-737"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -140,6 +156,7 @@
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
+                        <segue destination="7Ma-6q-OdI" kind="relationship" relationship="viewControllers" id="20m-Mw-K9z"/>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="iPy-hD-qV0" kind="relationship" relationship="viewControllers" id="Qpn-mN-odW"/>
@@ -235,7 +252,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b3G-du-kJK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="744.79999999999995" y="-0.44977511244377816"/>
+            <point key="canvasLocation" x="1822" y="101"/>
         </scene>
     </scenes>
     <resources>
